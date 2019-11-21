@@ -105,10 +105,10 @@ $(function () {
             // 启用字幕
             subHtmlSelectorRelative: true
         });
-        //解决懒加载和gallery插件会发生冲突
-        // $(document).find('img[data-original]').each(function(){
-        //     $(this).parent().attr("href", $(this).attr("data-original"));
-        // });
+        //解决懒加载与相册插件冲突
+        $(document).find('img[data-original]').each(function(){
+            $(this).parent().attr("href", $(this).attr("data-original"));
+        });
         // progress bar init
         const progressElement = window.document.querySelector('.progress-bar');
         if (progressElement) {
