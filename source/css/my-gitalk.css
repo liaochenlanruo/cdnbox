@@ -113,7 +113,8 @@ ol li {
 }
 
 .markdown-body table, th, td {
-    border: 0;
+    /* border: 0; */
+    border: 1;
 }
 
 table tr:nth-child(2n), thead {
